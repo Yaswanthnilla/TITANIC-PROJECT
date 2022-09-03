@@ -8,16 +8,27 @@
         #prediction_text
         {
             text-align: center;
-            font-size: large;
+            font-size: x-large;
             font-weight: bolder;
             color: black;
+        }
+        .predictform
+        {
+            margin-left: 550px;
+            margin-top: 70px;
+            margin-bottom: 30px;
+        }
+        body{
+            background-image: url("titanic_image.jpg");
         }
 
     </style>
     <title>Document</title>
 </head>
 <body>
-    <h1>Titanic Model Prediction</h1>
+    <h1 style="text-align:center;">Titanic Model Prediction</h1>
+    <hr>
+    <div class="predictform">
     <form action="{{ url_for('predict')}}" method="post">
         <input type="text" name="pclass" placeholder="pclass" required="required"/> <br>
         <input type="text" name="sex" required="required" placeholder="sex" /> <br>
@@ -34,8 +45,11 @@
         <button type="submit">Predict</button>
 
 </form>
+    </div>
 <br>
 <br>
+
+<hr>
 
 <div id="prediction_text">{{prediction_text}}</div>
 
