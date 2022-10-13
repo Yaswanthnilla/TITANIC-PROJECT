@@ -5,7 +5,7 @@ import pandas as pd
 
 app=Flask(__name__)
 
-# Loading the model
+# Load the model
 model=pickle.load(open('knnmodel.pkl','rb'))
 scale=pickle.load(open('scaling.pkl','rb'))
 
