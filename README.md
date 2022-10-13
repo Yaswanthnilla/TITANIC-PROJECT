@@ -1,7 +1,11 @@
 # TITANIC-PROJECT
 
+### This project is based on KNN Machine Learning algorithm which predicts survival rate of passengers travelled in the titanic
 
-# Git 
-1.add 
-2.commit 
-3.push 
+## Tools or Scripts Used:
+* Python
+* VS Code
+* pickle
+* Heroku
+* Flask
+
